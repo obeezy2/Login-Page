@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>admin</title>
+</head>
+
+<body>
+
+    <table class="users">
+        <thead>
+            <th>UserName</th>
+            <th>password</th>
+            <th>lastLoginTime</th>
+            <th>isAdmin</th>
+
+        </thead>
+    </table>
+    <select class="sort" onchange="onSortBy(this.value)">
+        <option value="">Last Login</option>
+        <option value="txt">Name</option>
+    </select>
+
+    <button class="return" onclick="moveToIndex()">Go Back</button>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/user-service.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
